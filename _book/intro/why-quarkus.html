@@ -1,0 +1,466 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>为什么是Quarkus · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="micro-profile.html" />
+    
+    
+    <link rel="prev" href="docker-k8s.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="microservice.html">
+            
+                <a href="microservice.html">
+            
+                    
+                    什么是微服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="docker-k8s.html">
+            
+                <a href="docker-k8s.html">
+            
+                    
+                    Docker容器与K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="why-quarkus.html">
+            
+                <a href="why-quarkus.html">
+            
+                    
+                    为什么是Quarkus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="micro-profile.html">
+            
+                <a href="micro-profile.html">
+            
+                    
+                    MicroProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="requirement.html">
+            
+                <a href="requirement.html">
+            
+                    
+                    要掌握的知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ch01/">
+            
+                <a href="../ch01/">
+            
+                    
+                    创建Quarkus应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ch01/code-generator.html">
+            
+                <a href="../ch01/code-generator.html">
+            
+                    
+                    创建项目骨架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../ch01/rest-api.html">
+            
+                <a href="../ch01/rest-api.html">
+            
+                    
+                    REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../ch01/package-deploy.html">
+            
+                <a href="../ch01/package-deploy.html">
+            
+                    
+                    打包与部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../ch03/">
+            
+                <a href="../ch03/">
+            
+                    
+                    开发微服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >为什么是Quarkus</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E3A;&#x4EC0;&#x4E48;&#x662F;quarkus">&#x4E3A;&#x4EC0;&#x4E48;&#x662F;Quarkus?</h1>
+<h2 id="java&#x5F00;&#x53D1;&#x90E8;&#x7F72;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x95EE;&#x9898;">Java&#x5F00;&#x53D1;&#x90E8;&#x7F72;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x95EE;&#x9898;</h2>
+<ul>
+<li>&#x4E0D;&#x591F;&#x8F7B;&#x91CF;</li>
+<li>&#x4E5F;&#x4E0D;&#x591F;&#x5FEB;&#x901F;</li>
+</ul>
+<h2 id="live-coding">Live-Coding</h2>
+<ul>
+<li>&#x4EE3;&#x7801;&#x5B9E;&#x65F6;&#x8FD0;&#x884C;&#x65F6;&#x6539;&#x52A8;</li>
+<li>&#x65E0;&#x9700;&#x91CD;&#x542F;JVM</li>
+</ul>
+<h2 id="&#x89C4;&#x8303;&#x652F;&#x6301;">&#x89C4;&#x8303;&#x652F;&#x6301;</h2>
+<p>MicroProfile 4.0</p>
+<h2 id="&#x8FD0;&#x884C;&#x6548;&#x7387;">&#x8FD0;&#x884C;&#x6548;&#x7387;</h2>
+<h3 id="&#x542F;&#x52A8;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;http&#x54CD;&#x5E94;&#x7528;&#x65F6;">&#x542F;&#x52A8;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;HTTP&#x54CD;&#x5E94;&#x7528;&#x65F6;</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Application</th>
+            <th>Traditional</th>
+            <th>Quarkus JVM</th>
+            <th>Quarkus Native</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>REST Application</td>
+            <td>4.3(s) </td>
+            <td>0.934(s) </td>
+            <td>0.016(s) </td>
+        </tr>
+        <tr>
+            <td>CRUD Application</td>
+            <td>9.5(s)  </td>
+            <td>2.03(s)  </td>
+            <td>0.042(s) </td>
+        </tr>    
+    </tbody>
+</table>
+
+<h3 id="&#x5185;&#x5B58;&#x4F7F;&#x7528;">&#x5185;&#x5B58;&#x4F7F;&#x7528;</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Application</th>
+            <th>Traditional</th>
+            <th>Quarkus JVM</th>
+            <th>Quarkus Native</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>REST Application</td>
+            <td>136(mb) </td>
+            <td>73(mb)  </td>
+            <td>12(mb)</td>
+        </tr>
+        <tr>
+            <td>CRUD Application</td>
+            <td>209(mb) </td>
+            <td>145(mb)  </td>
+            <td>28(mb)</td>
+        </tr>    
+    </tbody>
+</table>
+
+
+
+<h2 id="native-aot-compiler&#x4E8C;&#x8FDB;&#x5236;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;">Native AOT Compiler(&#x4E8C;&#x8FDB;&#x5236;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;)</h2>
+<ul>
+<li>JIT: Just-In-Time</li>
+<li>AOT: Ahead-Of-Time&#xFF0C;&#x7F3A;&#x70B9;&#x662F;&#x6784;&#x5EFA;Native&#x5305;&#x82B1;&#x8D39;&#x66F4;&#x591A;&#x65F6;&#x95F4;</li>
+</ul>
+<h2 id="&#x5BF9;&#x6BD4;&#x5176;&#x5B83;">&#x5BF9;&#x6BD4;&#x5176;&#x5B83;</h2>
+<ul>
+<li>Spring Native</li>
+<li>Micronaut</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="docker-k8s.html" class="navigation navigation-prev " aria-label="Previous page: Docker容器与K8s">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="micro-profile.html" class="navigation navigation-next " aria-label="Next page: MicroProfile">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"为什么是Quarkus","level":"1.2.3","depth":2,"next":{"title":"MicroProfile","level":"1.2.4","depth":2,"path":"intro/micro-profile.md","ref":"intro/micro-profile.md","articles":[]},"previous":{"title":"Docker容器与K8s","level":"1.2.2","depth":2,"path":"intro/docker-k8s.md","ref":"intro/docker-k8s.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"intro/why-quarkus.md","mtime":"2022-11-29T03:22:25.968Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-29T03:26:25.113Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
