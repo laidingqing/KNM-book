@@ -1,6 +1,9 @@
 # 为什么是Quarkus?
 
-## Java开发部署中的一些问题
+
+[Quarkus官网](https://cn.quarkus.io)，最新版v2.14.2
+
+## Java开发常见问题
 
 * 不够轻量
 * 也不够快速
@@ -13,7 +16,6 @@
 ## 社区规范支持
 
 MicroProfile 4.0
-
 
 ## Reactive响应式编程
 

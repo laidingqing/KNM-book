@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>为什么是Quarkus · GitBook</title>
+        <title>Docker · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -17,15 +17,15 @@
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
-                
-            
-                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="micro-profile.html" />
+    <link rel="next" href="k8s.html" />
     
     
-    <link rel="prev" href="docker-k8s.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../intro/">
             
-                <a href="./">
+                <a href="../intro/">
             
                     
                     介绍
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="microservice.html">
+        <li class="chapter " data-level="1.2.1" data-path="../intro/microservice.html">
             
-                <a href="microservice.html">
+                <a href="../intro/microservice.html">
             
                     
                     什么是微服务
@@ -129,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="docker-k8s.html">
+        <li class="chapter " data-level="1.2.2" data-path="../intro/docker-k8s.html">
             
-                <a href="docker-k8s.html">
+                <a href="../intro/docker-k8s.html">
             
                     
                     Docker容器与K8s
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3" data-path="why-quarkus.html">
+        <li class="chapter " data-level="1.2.3" data-path="../intro/why-quarkus.html">
             
-                <a href="why-quarkus.html">
+                <a href="../intro/why-quarkus.html">
             
                     
                     为什么是Quarkus
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="micro-profile.html">
+        <li class="chapter " data-level="1.2.4" data-path="../intro/micro-profile.html">
             
-                <a href="micro-profile.html">
+                <a href="../intro/micro-profile.html">
             
                     
                     MicroProfile
@@ -173,9 +173,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../ch02/">
+        <li class="chapter " data-level="1.3" data-path="./">
             
-                <a href="../ch02/">
+                <a href="./">
             
                     
                     容器与云
@@ -187,9 +187,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../ch02/docker.html">
+        <li class="chapter active" data-level="1.3.1" data-path="docker.html">
             
-                <a href="../ch02/docker.html">
+                <a href="docker.html">
             
                     
                     Docker
@@ -200,9 +200,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../ch02/k8s.html">
+        <li class="chapter " data-level="1.3.2" data-path="k8s.html">
             
-                <a href="../ch02/k8s.html">
+                <a href="k8s.html">
             
                     
                     Kubernetes
@@ -416,7 +416,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >为什么是Quarkus</a>
+        <a href=".." >Docker</a>
     </h1>
 </div>
 
@@ -431,90 +431,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x4E3A;&#x4EC0;&#x4E48;&#x662F;quarkus">&#x4E3A;&#x4EC0;&#x4E48;&#x662F;Quarkus?</h1>
-<p><a href="https://cn.quarkus.io" target="_blank">Quarkus&#x5B98;&#x7F51;</a>&#xFF0C;&#x6700;&#x65B0;&#x7248;v2.14.2</p>
-<h2 id="java&#x5F00;&#x53D1;&#x5E38;&#x89C1;&#x95EE;&#x9898;">Java&#x5F00;&#x53D1;&#x5E38;&#x89C1;&#x95EE;&#x9898;</h2>
+                                <h1 id="docker">Docker</h1>
+<h2 id="windowsmacos">Windows/MacOS</h2>
+<p>Windows&#x53CA;MacOS&#x7CFB;&#x7EDF;&#x63A8;&#x8350;&#x5B89;&#x88C5;<a href="https://www.docker.com/products/docker-desktop/" target="_blank">Docker Desktop</a>&#xFF0C;&#x6700;&#x65B0;&#x9884;&#x89C8;&#x7248;&#x53EF;&#x8FDB;&#x884C;WASM(WebAssembly)&#x3002;</p>
+<h2 id="linux">Linux</h2>
+<p>(&#x7565;)</p>
+<h2 id="docker-cli">docker cli</h2>
 <ul>
-<li>&#x4E0D;&#x591F;&#x8F7B;&#x91CF;</li>
-<li>&#x4E5F;&#x4E0D;&#x591F;&#x5FEB;&#x901F;</li>
+<li>docker version: &#x67E5;&#x9605;&#x7248;&#x672C;</li>
+<li>docker info: &#x663E;&#x793A;docker&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#xFF0C;&#x91CD;&#x70B9;&#x5173;&#x6CE8;Cgroup Driver: cgroupfs/systemd&#xFF0C;Kubernetes&#x8981;&#x4E0E;&#x4E4B;&#x4E00;&#x81F4;</li>
+<li>docker pull: &#x62C9;&#x53D6;&#x955C;&#x50CF;</li>
+<li>docker run: &#x8FD0;&#x884C;&#x955C;&#x50CF;</li>
+<li>docker exec: &#x6267;&#x884C;&#x5BB9;&#x5668;&#x4E2D;&#x7684;&#x547D;&#x4EE4;</li>
 </ul>
-<h2 id="&#x5F00;&#x53D1;&#x4F53;&#x9A8C;">&#x5F00;&#x53D1;&#x4F53;&#x9A8C;</h2>
+<h2 id="&#x56FD;&#x5185;&#x955C;&#x50CF;&#x914D;&#x7F6E;">&#x56FD;&#x5185;&#x955C;&#x50CF;&#x914D;&#x7F6E;</h2>
+<pre><code class="lang-json">{
+<span class="hljs-string">&quot;registry-mirrors&quot;</span>: [
+    <span class="hljs-string">&quot;https://registry.cn-hangzhou.aliyuncs.com&quot;</span>
+  ]
+}
+</code></pre>
 <ul>
-<li>&#x4EE3;&#x7801;&#x5B9E;&#x65F6;&#x8FD0;&#x884C;&#x65F6;&#x6539;&#x52A8;</li>
-<li>&#x65E0;&#x9700;&#x91CD;&#x542F;JVM</li>
+<li>in Docker Engine</li>
+<li>in /etc/docker/daemon.json</li>
 </ul>
-<h2 id="&#x793E;&#x533A;&#x89C4;&#x8303;&#x652F;&#x6301;">&#x793E;&#x533A;&#x89C4;&#x8303;&#x652F;&#x6301;</h2>
-<p>MicroProfile 4.0</p>
-<h2 id="reactive&#x54CD;&#x5E94;&#x5F0F;&#x7F16;&#x7A0B;">Reactive&#x54CD;&#x5E94;&#x5F0F;&#x7F16;&#x7A0B;</h2>
-<ul>
-<li>&#x4F9D;&#x8D56;Vert.x&#x548C;Netty</li>
-<li>&#x975E;&#x963B;&#x585E;I/O&#x4EA4;&#x4E92;</li>
-</ul>
-<h2 id="&#x8FD0;&#x884C;&#x6548;&#x7387;">&#x8FD0;&#x884C;&#x6548;&#x7387;</h2>
-<h3 id="&#x542F;&#x52A8;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;http&#x54CD;&#x5E94;&#x7528;&#x65F6;">&#x542F;&#x52A8;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;HTTP&#x54CD;&#x5E94;&#x7528;&#x65F6;</h3>
-<table>
-    <thead>
-        <tr>
-            <th>Application</th>
-            <th>Traditional</th>
-            <th>Quarkus JVM</th>
-            <th>Quarkus Native</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>REST Application</td>
-            <td>4.3(s) </td>
-            <td>0.934(s) </td>
-            <td>0.016(s) </td>
-        </tr>
-        <tr>
-            <td>CRUD Application</td>
-            <td>9.5(s)  </td>
-            <td>2.03(s)  </td>
-            <td>0.042(s) </td>
-        </tr>    
-    </tbody>
-</table>
+<h2 id="docker-buildxbuild">docker buildx/build</h2>
+<h3 id="dockerfile">Dockerfile</h3>
+<pre><code class="lang-txt">FROM registry.access.redhat.com/ubi8/openjdk-11:1.14
 
-<h3 id="&#x5185;&#x5B58;&#x4F7F;&#x7528;">&#x5185;&#x5B58;&#x4F7F;&#x7528;</h3>
-<table>
-    <thead>
-        <tr>
-            <th>Application</th>
-            <th>Traditional</th>
-            <th>Quarkus JVM</th>
-            <th>Quarkus Native</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>REST Application</td>
-            <td>136(mb) </td>
-            <td>73(mb)  </td>
-            <td>12(mb)</td>
-        </tr>
-        <tr>
-            <td>CRUD Application</td>
-            <td>209(mb) </td>
-            <td>145(mb)  </td>
-            <td>28(mb)</td>
-        </tr>    
-    </tbody>
-</table>
+COPY --chown=185 target/quarkus-app/lib/ /deployments/lib/
+COPY --chown=185 target/quarkus-app/*.jar /deployments/
+COPY --chown=185 target/quarkus-app/app/ /deployments/app/
+COPY --chown=185 target/quarkus-app/quarkus/ /deployments/quarkus/
 
-
-
-<h2 id="native-aot-compiler&#x4E8C;&#x8FDB;&#x5236;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;">Native AOT Compiler(&#x4E8C;&#x8FDB;&#x5236;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;)</h2>
-<ul>
-<li>JIT: Just-In-Time</li>
-<li>AOT: Ahead-Of-Time&#xFF0C;&#x7F3A;&#x70B9;&#x662F;&#x6784;&#x5EFA;Native&#x5305;&#x82B1;&#x8D39;&#x66F4;&#x591A;&#x65F6;&#x95F4;</li>
-</ul>
-<h2 id="&#x5BF9;&#x6BD4;&#x5176;&#x5B83;">&#x5BF9;&#x6BD4;&#x5176;&#x5B83;</h2>
-<ul>
-<li>Spring Native</li>
-<li>Micronaut</li>
-</ul>
+EXPOSE 8080
+ENTRYPOINT exec java -jar /deployments/quarkus-run.jar
+</code></pre>
+<h3 id="buildxbuild">buildx/build</h3>
+<pre><code class="lang-shell">docker buildx build -f src/main/docker/Dockerfile.jvm -t quarkus-mp/account-service:v0.1.0 .
+</code></pre>
 
                                 
                                 </section>
@@ -542,12 +497,12 @@
 
             
                 
-                <a href="docker-k8s.html" class="navigation navigation-prev " aria-label="Previous page: Docker容器与K8s">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 容器与云">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="micro-profile.html" class="navigation navigation-next " aria-label="Next page: MicroProfile">
+                <a href="k8s.html" class="navigation navigation-next " aria-label="Next page: Kubernetes">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -558,7 +513,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"为什么是Quarkus","level":"1.2.3","depth":2,"next":{"title":"MicroProfile","level":"1.2.4","depth":2,"path":"intro/micro-profile.md","ref":"intro/micro-profile.md","articles":[]},"previous":{"title":"Docker容器与K8s","level":"1.2.2","depth":2,"path":"intro/docker-k8s.md","ref":"intro/docker-k8s.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["fontsettings","sharing","lunr","highlight","livereload"],"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"highlight":{},"livereload":{},"search":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"intro/why-quarkus.md","mtime":"2022-12-03T00:54:00.090Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-03T01:18:04.496Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker","level":"1.3.1","depth":2,"next":{"title":"Kubernetes","level":"1.3.2","depth":2,"path":"ch02/k8s.md","ref":"ch02/k8s.md","articles":[]},"previous":{"title":"容器与云","level":"1.3","depth":1,"path":"ch02/README.md","ref":"ch02/README.md","articles":[{"title":"Docker","level":"1.3.1","depth":2,"path":"ch02/docker.md","ref":"ch02/docker.md","articles":[]},{"title":"Kubernetes","level":"1.3.2","depth":2,"path":"ch02/k8s.md","ref":"ch02/k8s.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch02/docker.md","mtime":"2022-12-01T08:39:13.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-03T00:48:42.631Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -568,11 +523,11 @@
     <script src="../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
         
     
         
@@ -584,15 +539,11 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
