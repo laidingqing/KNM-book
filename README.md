@@ -8,6 +8,8 @@
 [KNM笔记](https://laidingqing.github.io/KNM-book/)
 
 [源书PDF](/assets/pdf/Kubernetes-native-microservices-ebook-v4.pdf)
+
+[PDF笔记](/assets/pdf/book.pdf)
 ## 内容
 
 * Deploy enterprise Java applications on Kubernetes
