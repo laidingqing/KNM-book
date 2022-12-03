@@ -5,14 +5,20 @@
 * 不够轻量
 * 也不够快速
 
-## Live-Coding
+## 开发体验
 
 * 代码实时运行时改动
 * 无需重启JVM
 
-## 规范支持
+## 社区规范支持
 
 MicroProfile 4.0
+
+
+## Reactive响应式编程
+
+* 依赖Vert.x和Netty
+* 非阻塞I/O交互
 
 ## 运行效率
 

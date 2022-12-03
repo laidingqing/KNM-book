@@ -24,4 +24,4 @@
 * Quarkus
 * MicroProfile
 * Docker
-* Kubernetes(or MiniKube)# KNM-book
+* Kubernetes(or MiniKube)

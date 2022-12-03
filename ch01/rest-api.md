@@ -75,9 +75,6 @@ public Set<Account> getAccounts() { // C
 
 ```
 
-
-
-
 ## JAX-RS 说明
 
 所在包路径：javax.ws.rs.*
@@ -86,5 +83,8 @@ public Set<Account> getAccounts() { // C
 * @GET
 * @PathParam
 * @Produces
+* @PostConstruct
 
 ## 验证
+
+使用curl或Postman请求以上定义的路径，能正常响应内容。
