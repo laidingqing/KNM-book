@@ -16,6 +16,55 @@ Windows及MacOS系统推荐安装[Docker Desktop](https://www.docker.com/product
 * docker run: 运行镜像
 * docker exec: 执行容器中的命令
 
+### docker run
+
+* docker run --help
+* docker run -p 80:80 -v /tmp/html:/user/share/nginx/html nginx:latest
+
+## docker-compose
+
+* [docker-compose](https://github.com/docker/compose)
+* docker-compose up/down
+
+```yml
+version: '3.1'
+
+services:
+  consul:
+    image: consul:latest
+    command: consul agent -dev -log-level=warn -ui -client=0.0.0.0
+    hostname: consul
+    ports:
+      - "8500:8500"
+  gateway:
+    image: microhq/micro
+    command: api  --handler=rpc --registry_address=consul:8500 --namespace=esrv
+    network: 
+      - esrv_network
+    links:
+      - consul
+      - api-service
+    ports:
+      - "8080:8080"
+  api-service:
+    build: ./api
+    command: --registry_address=consul:8500
+    links:
+      - consul
+  account-service:
+    build: ./srv/account
+    command: --registry_address=consul:8500
+    ports:
+      - 50051:50051
+    links:
+    - consul
+  messenger:
+    image: nats
+    ports:
+      - 4222:4222
+```
+
+
 ## 国内镜像配置
 
 ```json

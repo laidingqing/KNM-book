@@ -4,6 +4,10 @@
 
 作者未从软件架构层面讲述微服务，要了解架构方面内容，推荐[Enterprise Java Microservices](https://livebook.manning.com/book/enterprise-java-microservices/chapter-1/)
 
+* 是一种小型的，松散耦合的分布式服务
+* 作为解决可扩展性，独立性的解决方案
+* SOA
+
 ## 解决的问题
 
 * JVM没有内置资源管理
