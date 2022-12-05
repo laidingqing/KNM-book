@@ -30,38 +30,27 @@ Windows及MacOS系统推荐安装[Docker Desktop](https://www.docker.com/product
 version: '3.1'
 
 services:
-  consul:
-    image: consul:latest
-    command: consul agent -dev -log-level=warn -ui -client=0.0.0.0
-    hostname: consul
+  nginx:
+    image: nginx:latest
     ports:
-      - "8500:8500"
-  gateway:
-    image: microhq/micro
-    command: api  --handler=rpc --registry_address=consul:8500 --namespace=esrv
-    network: 
-      - esrv_network
-    links:
-      - consul
-      - api-service
+      - 80:80  
+    volumes:
+      - /var/nginx/html:/usr/share/nginx/html
+      - /var/nginx/nginx.conf:/etc/nginx/nginx.conf
+    privileged: true 
+  mysql:
+    image: mysql:5.7.27
     ports:
-      - "8080:8080"
-  api-service:
-    build: ./api
-    command: --registry_address=consul:8500
-    links:
-      - consul
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=
   account-service:
-    build: ./srv/account
-    command: --registry_address=consul:8500
+    image: account-service:latest
     ports:
-      - 50051:50051
-    links:
-    - consul
-  messenger:
-    image: nats
-    ports:
-      - 4222:4222
+      - 8001:8001
+    depends_on:
+      - mysql
+      - redis	  
 ```
 
 
