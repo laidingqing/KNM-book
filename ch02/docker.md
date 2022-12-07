@@ -19,7 +19,7 @@ Windows及MacOS系统推荐安装[Docker Desktop](https://www.docker.com/product
 ### docker run
 
 * docker run --help
-* docker run -p 80:80 -v /tmp/html:/user/share/nginx/html nginx:latest
+* docker run -p 80:80 -v /tmp/html:/usr/share/nginx/html nginx:latest
 
 ## docker-compose
 
