@@ -31,6 +31,14 @@
 * 使用Kubernetes API和Kubernetes通信的命今行工具
 
 
+
+## Kubernetes 如何运行Docker
+
+* 调用CRI: Container Runtime Interface(Kubernates API)
+* 调用Containerd/CRI-O(容器运行时)
+* 根据OCI规范调用runc（容器镜像生成同时遵守OCI规范）
+* 完成容器处理
+
 ## 基本概念
 
 ### POD

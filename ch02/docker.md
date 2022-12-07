@@ -8,6 +8,13 @@ Windows及MacOS系统推荐安装[Docker Desktop](https://www.docker.com/product
 
 (略)
 
+## Docker如何工作
+
+* docker cli 命令
+* 调用Containerd(容器运行时)
+* 根据OCI规范调用runc（容器镜像生成同时遵守OCI规范）
+* 完成容器处理
+
 ## docker cli
 
 * docker version: 查阅版本
