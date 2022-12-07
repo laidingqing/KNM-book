@@ -1,0 +1,563 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Kubernetes · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ch01/" />
+    
+    
+    <link rel="prev" href="docker.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro/">
+            
+                <a href="../intro/">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/microservice.html">
+            
+                <a href="../intro/microservice.html">
+            
+                    
+                    什么是微服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/docker-k8s.html">
+            
+                <a href="../intro/docker-k8s.html">
+            
+                    
+                    Docker容器与K8s
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/why-quarkus.html">
+            
+                <a href="../intro/why-quarkus.html">
+            
+                    
+                    为什么是Quarkus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../intro/micro-profile.html">
+            
+                <a href="../intro/micro-profile.html">
+            
+                    
+                    MicroProfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    容器与云
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="k8s.html">
+            
+                <a href="k8s.html">
+            
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../ch01/">
+            
+                <a href="../ch01/">
+            
+                    
+                    创建Quarkus应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../ch01/code-generator.html">
+            
+                <a href="../ch01/code-generator.html">
+            
+                    
+                    创建项目骨架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../ch01/rest-api.html">
+            
+                <a href="../ch01/rest-api.html">
+            
+                    
+                    REST API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../ch01/package.html">
+            
+                <a href="../ch01/package.html">
+            
+                    
+                    打包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../ch01/deploy.html">
+            
+                <a href="../ch01/deploy.html">
+            
+                    
+                    部署运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../ch03/">
+            
+                <a href="../ch03/">
+            
+                    
+                    开发微服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ch03/configurate.md">
+            
+                <span>
+            
+                    
+                    服务配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../ch03/data-access.md">
+            
+                <span>
+            
+                    
+                    数据访问
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../ch03/client.md">
+            
+                <span>
+            
+                    
+                    服务间通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../ch03/resillence.md">
+            
+                <span>
+            
+                    
+                    容错
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../ch03/reactive.md">
+            
+                <span>
+            
+                    
+                    反应式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../ch04/">
+            
+                <a href="../ch04/">
+            
+                    
+                    可观测性/安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Kubernetes</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="kubernetes">Kubernetes</h1>
+<h2 id="version">Version</h2>
+<h3 id="kubernetes-in-docker-desktop">Kubernetes in docker desktop</h3>
+<ul>
+<li>&#x4FEE;&#x6539;&#x4E3A;&#x56FD;&#x5185;&#x955C;&#x50CF;, Docker Engine registry-mirrors</li>
+</ul>
+<pre><code class="lang-json">  <span class="hljs-string">&quot;registry-mirrors&quot;</span>: [
+    <span class="hljs-string">&quot;https://registry.cn-hangzhou.aliyuncs.com&quot;</span>
+  ]
+</code></pre>
+<h3 id="minikube">Minikube</h3>
+<p><a href="https://minikube.sigs.k8s.io/docs/start/" target="_blank">&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;</a> &#x6216; Docker desktop&#x4E2D;&#x5F00;&#x542F;</p>
+<h3 id="k3s">K3s</h3>
+<p><a href="https://k3s.io" target="_blank">K3s&#x5B98;&#x7F51;</a></p>
+<h3 id="kubernetes-cluster">Kubernetes Cluster</h3>
+<ul>
+<li>(&#x5B89;&#x88C5;&#x7565;)</li>
+<li>ETCD + coreDNS + kube-apiserve + kube-controller-manager + kube-scheduler + kube-proxy + fannled + kubelet</li>
+</ul>
+<h2 id="kubectl">kubectl</h2>
+<ul>
+<li>&#x4F7F;&#x7528;Kubernetes API&#x548C;Kubernetes&#x901A;&#x4FE1;&#x7684;&#x547D;&#x4ECA;&#x884C;&#x5DE5;&#x5177;</li>
+</ul>
+<h2 id="&#x57FA;&#x672C;&#x6982;&#x5FF5;">&#x57FA;&#x672C;&#x6982;&#x5FF5;</h2>
+<h3 id="pod">POD</h3>
+<ul>
+<li>Pod &#x662F; k8s &#x4E2D;&#x96C6;&#x7FA4;&#x90E8;&#x7F72;&#x5E94;&#x7528;&#x548C;&#x670D;&#x52A1;&#x7684;&#x6700;&#x5C0F;&#x5355;&#x5143;&#xFF0C;&#x4E00;&#x4E2A; pod &#x4E2D;&#x53EF;&#x4EE5;&#x90E8;&#x7F72;&#x591A;&#x4E2A;&#x5BB9;&#x5668;</li>
+<li>kubectl get pods -n kube-system</li>
+</ul>
+<h3 id="replicaset">ReplicaSet</h3>
+<p>*&#x3000;&#x526F;&#x672C;&#x96C6;</p>
+<h3 id="deployment">Deployment</h3>
+<ul>
+<li>Deployment &#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5BF9; Pod &#x548C; ReplicaSet &#x7684;&#x7BA1;&#x7406;&#x65B9;&#x5F0F;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A; Deployment &#x90FD;&#x5BF9;&#x5E94;&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x4E00;&#x6B21;&#x90E8;&#x7F72;</li>
+<li>kubectl get deployment</li>
+</ul>
+<h3 id="service">Service</h3>
+<ul>
+<li>&#x901A;&#x8FC7;&#x5BF9;&#x5916;&#x66B4;&#x9732;&#x670D;&#x52A1;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;POD&#xFF0C;&#x57FA;&#x4E8E;Label&#x6807;&#x7B7E;&#x9009;&#x62E9;POD&#x6216;DNS</li>
+<li>&#x65B9;&#x5F0F;: ClusterIP/NodePort/LoadBalancer</li>
+</ul>
+<h3 id="ingress-controller">Ingress Controller</h3>
+<ul>
+<li>&#x53CD;&#x5411;&#x4EE3;&#x7406;</li>
+<li>Nginx Ingress/Traefik Ingress</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="docker.html" class="navigation navigation-prev " aria-label="Previous page: Docker">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ch01/" class="navigation navigation-next " aria-label="Next page: 创建Quarkus应用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kubernetes","level":"1.3.2","depth":2,"next":{"title":"创建Quarkus应用","level":"1.4","depth":1,"path":"ch01/README.md","ref":"ch01/README.md","articles":[{"title":"创建项目骨架","level":"1.4.1","depth":2,"path":"ch01/code-generator.md","ref":"ch01/code-generator.md","articles":[]},{"title":"REST API","level":"1.4.2","depth":2,"path":"ch01/rest-api.md","ref":"ch01/rest-api.md","articles":[]},{"title":"打包","level":"1.4.3","depth":2,"path":"ch01/package.md","ref":"ch01/package.md","articles":[]},{"title":"部署运行","level":"1.4.4","depth":2,"path":"ch01/deploy.md","ref":"ch01/deploy.md","articles":[]}]},"previous":{"title":"Docker","level":"1.3.1","depth":2,"path":"ch02/docker.md","ref":"ch02/docker.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["fontsettings","sharing","lunr","highlight","livereload"],"pluginsConfig":{"fontsettings":{"family":"sans","size":2,"theme":"white"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"highlight":{},"livereload":{},"search":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch02/k8s.md","mtime":"2022-12-05T07:23:51.821Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-07T07:35:19.133Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+
+    </body>
+</html>
+

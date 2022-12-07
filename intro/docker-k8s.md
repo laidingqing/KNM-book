@@ -5,7 +5,6 @@
 
 * Docker
 * Podman
-* Containerd
 
 ## Docker: 开源的应用容器引擎
 
