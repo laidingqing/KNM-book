@@ -66,6 +66,8 @@ services:
 ```json
 {
 "registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "https://docker.mirrors.ustc.edu.cn",
     "https://registry.cn-hangzhou.aliyuncs.com"
   ]
 }  
