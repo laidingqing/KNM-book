@@ -18,10 +18,12 @@ Windows及MacOS系统推荐安装[Docker Desktop](https://www.docker.com/product
 
 ## 基础镜像层
 
-* Alpine 最小的Alpine Linux 发行版
-* Debian bullseye发行版
-* Ubuntu
+* Alpine Linux 发行版
+* Debian slim发行版
 * 查看: docker run -it [xxx] cat /etc/os-release
+
+<b>仅提供标准C库，shell，包管理</b>
+其它：Ubuntu、CentOS
 
 ## docker cli
 
