@@ -15,6 +15,14 @@ Windows及MacOS系统推荐安装[Docker Desktop](https://www.docker.com/product
 * 根据OCI规范调用runc（容器镜像生成同时遵守OCI规范）
 * 完成容器处理
 
+
+## 基础镜像层
+
+* Alpine 最小的Alpine Linux 发行版
+* Debian bullseye发行版
+* Ubuntu
+* 查看: docker run -it [xxx] cat /etc/os-release
+
 ## docker cli
 
 * docker version: 查阅版本
