@@ -16,6 +16,13 @@ Windows及MacOS系统推荐安装[Docker Desktop](https://www.docker.com/product
 * 完成容器处理
 
 
+## 镜像标识
+
+* [Registry Host/][Username/]Name[:TAG]
+* nginx:latest
+* coredns/coredns:v1.8.6
+* k8s.gcr.io/etcd:3.5.3-0
+
 ## 基础镜像层
 
 * Alpine Linux 发行版
