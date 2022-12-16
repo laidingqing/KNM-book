@@ -15,7 +15,7 @@
 
 ### Minikube
 
-[官网下载](https://minikube.sigs.k8s.io/docs/start/) 或 Docker desktop中开启
+[官网下载](https://minikube.sigs.k8s.io/docs/start/) 
 
 ### K3s
 
@@ -23,7 +23,7 @@
 
 ### Kubernetes Cluster
 
-* (安装略)
+* kubeadm (安装略)
 * ETCD + coreDNS + kube-apiserve + kube-controller-manager + kube-scheduler + kube-proxy + fannled + kubelet
 
 ## kubectl

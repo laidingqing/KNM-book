@@ -115,3 +115,7 @@ ENTRYPOINT exec java -jar /deployments/quarkus-run.jar
 ```shell
 docker buildx build -f src/main/docker/Dockerfile.jvm -t quarkus-mp/account-service:v0.1.0 .
 ```
+
+### Harbor 
+
+* private images registry repository
