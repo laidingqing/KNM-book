@@ -1,6 +1,13 @@
 # Kubernetes
 
 
+也称为 K8s，是用于自动部署、扩缩和管理容器化应用程序的开源系统。
+
+* 自动化上线和回滚
+* 服务发现与负载均衡
+* 自我修复
+* 水平扩缩
+
 ## Version
 
 ### Kubernetes in docker desktop
@@ -26,18 +33,7 @@
 * kubeadm (安装略)
 * ETCD + coreDNS + kube-apiserve + kube-controller-manager + kube-scheduler + kube-proxy + fannled + kubelet
 
-## kubectl
 
-* 使用Kubernetes API和Kubernetes通信的命今行工具
-
-
-
-## Kubernetes 如何运行Docker
-
-* 调用CRI: Container Runtime Interface(Kubernates API)
-* 调用Containerd/CRI-O(容器运行时)
-* 根据OCI规范调用runc（容器镜像生成同时遵守OCI规范）
-* 完成容器处理
 
 ## 基本概念
 
@@ -59,9 +55,42 @@
 
 * 通过对外暴露服务方式访问POD，基于Label标签选择POD或DNS
 * 方式: ClusterIP/NodePort/LoadBalancer
-
+* kubectl get svc/service
 
 ### Ingress Controller
 
-* 反向代理
-* Nginx Ingress/Traefik Ingress
+* 从集群外访问集群内服务的路由控制器
+* Nginx Ingress/Traefik Ingress/Envoy Ingress/HAProxy Ingress/Apache APISIX/Istio Ingress
+* kubectl get ingress
+
+
+## kubectl
+
+* 使用Kubernetes API和Kubernetes通信的命今行工具
+
+
+### 基本命令
+
+* kubectl get (componentstatuses/nodes/pods/deployment/service/ingress) [-n namespace]
+* kubectl logs (pod name) [-n namespace]
+* kubectl describe (name) [-n namespace]
+
+
+
+## Kubernetes 如何运行Docker
+
+* 调用CRI: Container Runtime Interface(Kubernates API)
+* 调用Containerd/CRI-O(容器运行时)
+* 根据OCI规范调用runc（容器镜像生成同时遵守OCI规范）
+* 完成容器处理
+
+
+
+## 部署
+
+
+### YAML
+
+
+
+### Helm
