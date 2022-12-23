@@ -24,6 +24,9 @@
 
 [官网下载](https://minikube.sigs.k8s.io/docs/start/) 
 
+* 安装二进制文件
+* minikube start --image-mirror-country=cn --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers --driver=docker
+
 ### K3s
 
 [K3s官网](https://k3s.io)
