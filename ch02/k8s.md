@@ -27,6 +27,13 @@
 * 安装二进制文件
 * minikube start --image-mirror-country=cn --image-repository=registry.cn-hangzhou.aliyuncs.com/google_containers --driver=docker
 
+
+### MicroK8s
+
+
+[官网](https://microk8s.io/)
+ 
+
 ### K3s
 
 [K3s官网](https://k3s.io)
@@ -34,7 +41,7 @@
 ### Kubernetes Cluster
 
 * kubeadm (安装略)
-* ETCD + coreDNS + kube-apiserve + kube-controller-manager + kube-scheduler + kube-proxy + fannled + kubelet
+* ETCD + coreDNS + kube-apiserve + kube-controller-manager + kube-scheduler + kube-proxy + fanneld + kubelet
 
 
 
