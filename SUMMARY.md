@@ -9,7 +9,7 @@
 * [容器与云](/ch02/README.md)
   * [Docker](/ch02/docker.md)
   * [Kubernetes](/ch02/k8s.md)
-  
+  * [Traefik Ingress](/ch02/traefik.md)
 * [创建Quarkus应用](/ch01/README.md)
   * [创建项目骨架](/ch01/code-generator.md)
   * [REST API](/ch01/rest-api.md)
