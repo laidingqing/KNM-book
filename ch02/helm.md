@@ -55,6 +55,8 @@ Helm是一个 Kubernetes 的包管理工具，类似Linux中的yum/apt等。
 * helm ls -n whoami
 * helm upgrade web-server bitnami/nginx --set service.type="ClusterIP" -n whoami
 * 查阅更多参数: https://artifacthub.io/packages/helm/bitnami/nginx
+* helm history web-server -n whoami
+* helm rollback web-server [REVISION] -n whoami
 
 ## 制作自己的Chart
 
